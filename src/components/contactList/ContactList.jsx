@@ -7,13 +7,13 @@ import {
   DeleteBtn,
 } from './ContactList.styled';
 
-export const ContactList = ({
+export function ContactList({
   contacts,
   onDelete,
   searchName,
   onSearch,
   clearFilter,
-}) => {
+}) {
   return (
     <div>
       {contacts.length > 0 && (
@@ -45,4 +45,4 @@ export const ContactList = ({
       )}
     </div>
   );
-};
+}
